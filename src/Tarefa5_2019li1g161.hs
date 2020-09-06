@@ -31,7 +31,6 @@ import Tarefa2_2019li1g161
 import Tarefa4_2019li1g161
 import Tarefa6_2019li1g161
 import Menus
-import Camera
 import Graphics.Gloss
 import Graphics.Gloss.Interface.Pure.Game
 import Graphics.Gloss.Juicy
@@ -112,6 +111,7 @@ data EstadoJogo = EstadoJogo
 data Opcoes = Opcoes 
     {teclas :: [[Key]]}
 
+data Camera = Camera {posCamera :: (Float, Float)} deriving Show
 -- | Interação que pode ser realizada por diferentes utilizadores, motivo pelo qual é utilizado um inteiro para o índice do Jogador.
 data Interacao 
   = ICima Int
